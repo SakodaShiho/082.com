@@ -1,41 +1,95 @@
 
+* {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-weight: normal;
+}
+
 body {
   margin:-20px 0 0 0;
   padding:0;
 }
 
-.header {
-  position: relative;
-  height: 600px;
-  overflow: hidden;
-
+.space {
+  height: 40px;
 }
 
-.header__bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("header1.jpg");
-  transform: skewY(-6deg);
-  transform-origin: top left;
-  background-size: cover;
-  box-sizing: border-box;
-}
 
-.logo {
-  position: absolute;
-  right: 0;
-}
+  .header {
+    position: relative;
+    height: 600px;
+  }
 
-.header__text {
-  position: absolute;
-  right: 0;
-  font-family: serif;
+  .header__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("header1.jpg");
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+  .header .container {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: right;
+    right: 5%;
+  }
+
+  .header .container h1 {
+    font-size: 28px;
+    text-shadow: #fff 3px 3px 5px;
+  }
+
+
+/* 960px未満 */
+@media screen and (max-width: 959px) {
+  .header {
+    height: 500px;
+  }
+
+  .header .container img {
+    width: 313px;
+  }
+
+  .header .container h1 {
+    font-size: 25px;
+  }
+
 }
 
 /* 560px未満 */
 @media screen and (max-width: 559px) {
+  .header {
+    height: 400px;
+  }
+
+  .header__bg {
+    opacity: 0.7;
+  }
+
+  .header .container {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    right: 0;
+  }
+
+  .space {
+    display: none;
+  }
+
+  .header .container img {
+    width: 313px;
+  }
+
+  .header .container h1 {
+    font-size: 20px;
+  }
+} 
