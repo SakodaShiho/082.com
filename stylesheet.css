@@ -1,4 +1,6 @@
 
+
+
 * {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   font-weight: normal;
@@ -25,6 +27,17 @@ body {
   border-bottom: 0.5px solid #DEDEDE;
   width: 100%;
   padding-bottom: 30;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all  0.3s ease;
+}
+
+a:hover {
+  color: #DEDEDE;
 }
 
 
@@ -119,6 +132,7 @@ body {
   text-align: center;
   display: flex;
   margin: 0 10%;
+  padding-bottom: 60px;
 }
 
 .gaiyou h1 {
@@ -133,31 +147,128 @@ body {
   padding: 0 10px;
 }
 
+/* 960px未満 */
+@media screen and (max-width: 959px) {
+
+  .gaiyou .container {
+    text-align: center;
+    display: block;
+    margin: 0px;
+  }
+
+  .gaiyou_text {
+    padding: 10 0px;
+  }
+
+}
+
+/* 560px未満 */
+@media screen and (max-width: 559px) {
+
+  .gaiyou .container {
+    text-align: center;
+    display: block;
+    margin: 0 10%;
+  }
+
+  .gaiyou_img img {
+    width:300px;
+  }
+  
+}
+
+
+/* 画像 */
+
+.product-image {
+  position: relative;
+  height: 450px;
+  background-image: url("product-image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.product-text {
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  right: 2%;
+  top: 30%;
+  margin: 0px;
+  padding: 60px;
+  border-radius: 50%;
+  background-color: #F4F8F9;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  opacity: 0.9;
+}
+
+
+
+/* 申込 */
+
+.application {
+  height: 1000px;
+}
 
 
 /* footer */
 
 .footer {
-  height: 150px;
+  height: auto;
   background-color: #F4F8F9;
+  padding: 0px 30px;
 }
 
-.footer_logo {
+.footer .container {
   display: flex;
-  float:left;
 }
 
 .footer img {
-  display: flex;
   width: 250px;
 }
 
 .footer_text {
-  padding: 50px;
+  padding: 50px 10px;
 }
 
 .footer li {
   list-style: none;
   display: inline;
   padding: 12px 20px;
+  font-size: 15px;
+}
+
+
+/* 960px未満 */
+@media screen and (max-width: 959px) {
+
+  .footer {
+    height: auto;
+    background-color: #F4F8F9;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .footer .container  {
+    display: block;
+    float:none;
+  }
+
+  .footer_text {
+    padding: 0px 10px;
+  }
+
+  .footer ul {
+    margin: 0;
+    padding-left: 0;
+  }
+
+
+  .footer li {
+    list-style: none;
+    display: block;
+    padding: 12px 0px;
+    font-size: 15px;
+  }
+
 }
