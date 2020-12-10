@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>082.com</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
 </head>
 <body>
 
     <!-- TOPヘッダー -->
+
+    <section id="top"></section>
 
     <div class="header">
         <div class="header__bg"></div>
@@ -23,8 +26,10 @@
     </div>
 
 
+
     <!-- 概要 -->
 
+    <section id="gaiyou"></section>
     <div class="gaiyou">
         <div class="space"></div>
         <h2>『082.com』とは？</h2>
@@ -36,7 +41,7 @@
                 <img src="giftbox.jpg">
             </div>
             <div class="gaiyou_text">
-                <p>月額600円(税抜)で、</p>
+                <p>月額800円(税抜)で、</p>
                 <p>月に一度 082.comからとっておきのおやつが届きます</p>
                 <br>
                 <p>全国のお菓子屋さんの商品と一緒に、</p>
@@ -60,7 +65,7 @@
 
 
     <!-- 注文の流れ -->
-
+    <section id="OrderFlow"></section>
     <div class="OrderFlow">
             <div class="space"></div>
             <h2>ご注文の流れ</h2>
@@ -75,11 +80,15 @@
                     <p>082.comに会員登録</p>
                 </div>
 
+                <span class="icon"><i class="fas fa-caret-down"></i></span>
+
                 <div class="step">
                     <h2>STEP2 診断</h2>
                     <img src="step2.png">
                     <p>苦手食材やアレルギーなどを入力</p>
                 </div>
+
+                <span class="icon"><i class="fas fa-caret-down"></i></span>
 
                 <div class="step">
                     <h2>STEP3 申込</h2>
@@ -92,11 +101,55 @@
     </div>
 
 
+
+    <!-- よくある質問 -->
+
+    <section id="question"></section>
+    <div class="question">
+
+        <div class="space"></div>
+        <h2>よくある質問</h2>
+        <div class="space"></div>
+        <div class="border"></div>
+        <div class="space"></div>
+
+        <div class="container">
+
+            <div class="cp_qa">
+                <div class="cp_actab">
+                    <input id="cp_tabfour021" type="checkbox" name="tabs">
+                    <div class="cp_plus">+</div>
+                    <label for="cp_tabfour021">質問テキスト</label>
+                    <div class="cp_actab-content">答えテキスト</div>
+                </div>
+                <div class="cp_actab">
+                    <input id="cp_tabfour022" type="checkbox" name="tabs">
+                    <div class="cp_plus">+</div>
+                    <label for="cp_tabfour022">質問テキスト</label>
+                    <div class="cp_actab-content">答えテキスト</div>
+                </div>
+                <div class="cp_actab">
+                    <input id="cp_tabfour023" type="checkbox" name="tabs">
+                    <div class="cp_plus">+</div>
+                    <label for="cp_tabfour023">質問テキスト</label>
+                    <div class="cp_actab-content">答えテキスト</div>
+                </div>
+            </div>
+
+        </div>
+            
+    </div>
+
+
+
     <!-- 申込ボタン -->
 
+    <section id="application"></section>
     <div class="application">
 
-        
+        <div class="space"></div>
+        <a href="#top" class="btn btn-c">お申込みはこちら</a>
+        <div class="space"></div>
     </div>
 
 
@@ -105,13 +158,14 @@
     <div class="footer">
         <div class="container">
             <div class="footer_logo">
-                <img src="logo.png">
+                <a href="#top"><img src="logo.png"></a>
             </div>
             <div class="footer_text">
                 <ul>
-                    <li><a href="#">『082.com』とは？</a></li>
-                    <li>よくある質問</li>
-                    <li>お申し込み</li>
+                    <li><a href="#gaiyou">『082.com』とは？</a></li>
+                    <li><a href="#OrderFlow">お申込みの流れ</a></li>
+                    <li><a href="#question">よくある質問</a></li>
+                    <li><a href="#application">お申込み</a></li>
                 </ul>
             </div>
         </div>
