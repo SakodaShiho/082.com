@@ -111,6 +111,10 @@ html {
       height: 400px;
     }
 
+    .header__bg {
+      background-size: auto 600px;
+    }
+
     .header .container {
       position: absolute;
       width: 100%;
@@ -246,7 +250,8 @@ html {
   @media screen and (max-width: 559px) {
 
     .product-image {
-      background-position: center;
+      background-size: auto 900px;
+      background-repeat: no-repeat;
       text-align: center;
     }
 
@@ -285,15 +290,16 @@ html {
 
 .step h2 {
   display: inline-block;
-  background: linear-gradient(transparent 70%, yellow 70%);
+  background: linear-gradient(transparent 70%, #FEE96C 70%);
 }
 
 .step img {
   display: block;
-  width: 160px;
+  width: 120px;
   padding: 30px 0px;
   margin: 0px auto;
 }
+
 
   /* 960px未満 */
   @media screen and (max-width: 959px) {
@@ -444,9 +450,11 @@ html {
 
 .application {
   text-align: center;
-  padding: 130px 0px;
+  padding: 200px 0px;
   background-image: url(suisai.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 html {
@@ -593,3 +601,51 @@ a.btn-c:hover {
   }
 
 }
+
+
+/* ログインボタン */
+
+#login {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background: #FEE96C;
+  opacity: 0.8;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#login img {
+  display: block;
+  padding: ;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  padding: 15px 0px 0px 0px;
+}
+
+#login p {
+  margin: 5px 0px;
+  letter-spacing: -2px;
+}
+
+
+/* 560px未満 */
+@media screen and (max-width: 559px) {
+
+  #login {
+    width: 80px;
+    height: 80px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  #login img {
+    width: 25px;
+    height: 25px;
+  }
+
+}
+
