@@ -151,7 +151,7 @@ html {
   text-align: center;
   display: flex;
   margin: 0 10%;
-  padding-bottom: 60px;
+  padding-bottom: 160px;
 }
 
 .gaiyou h1 {
@@ -206,7 +206,7 @@ html {
 
 .product-image {
   position: relative;
-  height: 450px;
+  height: 500px;
   background-image: url("product-image.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -217,14 +217,16 @@ html {
   text-align: center;
   width: 500px;
   height: 500px;
-  right: 2%;
-  top: 30%;
-  margin: 0px;
+  top: -12%;
+  left: 50%;
+  transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  margin: 0 auto;
   padding: 60px;
-  border-radius: 50%;
   background-color: #F4F8F9;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 
@@ -233,11 +235,6 @@ html {
 
     .product-image {
       background-position: center;
-    }
-
-    .product-text {
-      width: 400px;
-      height: 400px;
     }
 
     .product-text h1 {
@@ -256,8 +253,10 @@ html {
     }
 
     .product-text {
-      width: 250px;
-      height: 250px;
+      width: 80%;
+      height: auto;
+      padding: 20px;
+      top: -0%;
     }
 
   }
@@ -269,7 +268,7 @@ html {
 .OrderFlow {
   text-align: center;
   height: auto;
-  padding: 300px 0px 60px 0px;
+  padding: 150px 0px 60px 0px;
 }
 
 .OrderFlow .container {
@@ -305,7 +304,7 @@ html {
   @media screen and (max-width: 959px) {
 
     .OrderFlow {
-      padding: 230px 0px 60px 0px;
+      padding: 150px 0px 60px 0px;
     }
 
     .step img {
@@ -322,7 +321,7 @@ html {
   @media screen and (max-width: 559px) {
   
     .OrderFlow {
-      padding: 180px 0px 60px 0px;
+      padding: 150px 0px 60px 0px;
     }
 
     .OrderFlow .container {
